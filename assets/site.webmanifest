@@ -1,0 +1,16 @@
+{
+  "name": "Vishnu Pratap Singh | Ransomware Solutions & Data Recovery",
+  "short_name": "VPS Cyber Recovery",
+  "description": "Professional ransomware solutions, data recovery, decryption, ransomware analysis and threat prevention services in Lucknow, Uttar Pradesh.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#050814",
+  "theme_color": "#050814",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "64x64 128x128 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

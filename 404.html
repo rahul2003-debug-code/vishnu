@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | Vishnu Pratap Singh</title>
+  <meta name="theme-color" content="#050814">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@700;800&family=Syne:wght@800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .error-page-wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+    }
+    .error-card {
+      background: var(--bg-card);
+      border: 1px solid var(--gold-border);
+      border-radius: var(--radius-lg);
+      padding: 60px 40px;
+      max-width: 580px;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    }
+    .error-code {
+      font-family: var(--font-display);
+      font-size: 5rem;
+      font-weight: 900;
+      background: var(--gold-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .error-title {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      color: var(--text-pure);
+      margin-bottom: 14px;
+    }
+    .error-text {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="cyber-overlay" aria-hidden="true"></div>
+  
+  <main class="error-page-wrapper">
+    <div class="error-card">
+      <div class="error-code">404</div>
+      <h1 class="error-title">Security Perimeter: Node Not Found</h1>
+      <p class="error-text">
+        The requested resource path does not exist on this server or has been relocated.
+      </p>
+      <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+        <a href="./" class="btn btn-primary">Return to Homepage</a>
+        <a href="tel:+919170409556" class="btn btn-outline">Call +91 9170409556</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
