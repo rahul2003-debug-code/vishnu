@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollSpy();
   initContactForm();
   initBackToTop();
-  initMobileFloatingBar();
   initDynamicScrollReveals();
 });
 
@@ -287,29 +286,7 @@ function initDynamicScrollReveals() {
 }
 
 /* ==========================================================================
-   6. Mobile Floating Bar Hide Near Footer
-   ========================================================================== */
-function initMobileFloatingBar() {
-  const bar = document.getElementById('mobileFloatingBar');
-  const footer = document.querySelector('footer');
-  if (!bar || !footer) return;
-
-  const handleScroll = () => {
-    const footerRect = footer.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-    if (footerRect.top <= windowHeight - 30) {
-      bar.classList.add('hide');
-    } else {
-      bar.classList.remove('hide');
-    }
-  };
-
-  window.addEventListener('scroll', handleScroll, { passive: true });
-  handleScroll();
-}
-
-/* ==========================================================================
-   7. Contact Form Client-Side Handler
+   6. Contact Form Client-Side Handler
    ========================================================================== */
 function initContactForm() {
   const form = document.getElementById('contactForm');

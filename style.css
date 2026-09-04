@@ -1,7 +1,7 @@
 /* ==========================================================================
    VISHNU PRATAP SINGH — RANSOMWARE & DATA RECOVERY
    Dynamic Cybersecurity Design System: Midnight Navy, Champagne Gold, Glassmorphism
-   Fully Responsive for All Smartphones, Tablets, and Desktops
+   Clean, Elegant, Responsive for All Devices (Phone, Tablet, Desktop)
    ========================================================================== */
 
 :root {
@@ -83,7 +83,6 @@ body {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  padding-bottom: 0;
 }
 
 /* Background Cyber Grid Canvas */
@@ -505,7 +504,7 @@ button, input, textarea {
   top: 0;
   right: -100%;
   width: 100%;
-  max-width: 340px;
+  max-width: 320px;
   height: 100vh;
   background: rgba(6, 10, 26, 0.98);
   backdrop-filter: blur(24px);
@@ -570,7 +569,7 @@ button, input, textarea {
 .hero-section {
   min-height: 100vh;
   padding-top: calc(var(--header-height) + 30px);
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   display: flex;
   align-items: center;
   position: relative;
@@ -1913,91 +1912,12 @@ button, input, textarea {
 }
 
 /* ==========================================================================
-   11. FLOATING MOBILE QUICK ACTION BAR
-   ========================================================================== */
-.mobile-floating-bar {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 990;
-  background: rgba(5, 8, 20, 0.95);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-top: 1px solid var(--gold-border);
-  padding: 10px 16px;
-  padding-bottom: calc(10px + env(safe-area-inset-bottom, 0px));
-  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.6);
-  transition: transform var(--transition-smooth);
-}
-
-.mobile-floating-bar.hide {
-  transform: translateY(110%);
-}
-
-.mobile-float-inner {
-  display: flex;
-  gap: 12px;
-  max-width: 480px;
-  margin: 0 auto;
-}
-
-.mobile-float-btn {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  height: 46px;
-  border-radius: var(--radius-md);
-  font-family: var(--font-heading);
-  font-size: 0.92rem;
-  font-weight: 700;
-  text-decoration: none;
-  transition: all var(--transition-fast);
-}
-
-.float-call {
-  background: var(--gold-gradient);
-  color: #050814;
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.35);
-}
-
-.float-icon-pulse {
-  display: flex;
-  align-items: center;
-  animation: pulseCall 2.5s infinite;
-}
-
-.float-call svg {
-  width: 18px;
-  height: 18px;
-}
-
-.float-wa {
-  background: #25d366;
-  color: #ffffff;
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.35);
-}
-
-.float-wa svg {
-  width: 18px;
-  height: 18px;
-}
-
-@keyframes pulseCall {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.15); }
-}
-
-/* ==========================================================================
-   Responsive Breakpoints & Mobile Optimization
+   Responsive Breakpoints
    ========================================================================== */
 @media (max-width: 1080px) {
   .hero-container {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 40px;
   }
 
   .hero-content {
@@ -2064,21 +1984,12 @@ button, input, textarea {
 }
 
 @media (max-width: 820px) {
-  /* Show Mobile Nav & Floating Bar */
   .nav-menu {
     display: none;
   }
 
   .mobile-toggle {
     display: flex;
-  }
-
-  .mobile-floating-bar {
-    display: block;
-  }
-
-  body {
-    padding-bottom: 74px; /* Space for floating bottom bar */
   }
 
   .services-grid {
@@ -2108,16 +2019,16 @@ button, input, textarea {
 /* Specific Phone Optimizations (360px - 600px) */
 @media (max-width: 600px) {
   .section {
-    padding: 60px 0;
+    padding: 55px 0;
   }
 
   .section-header {
-    margin-bottom: 36px;
+    margin-bottom: 32px;
   }
 
   .hero-section {
-    padding-top: calc(var(--header-height) + 15px);
-    padding-bottom: 35px;
+    padding-top: calc(var(--header-height) + 12px);
+    padding-bottom: 40px;
   }
 
   /* Tagline on Mobile */
@@ -2128,54 +2039,35 @@ button, input, textarea {
   }
 
   .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.22rem;
     margin-bottom: 12px;
   }
 
   .hero-expertise {
-    font-size: 0.96rem;
+    font-size: 0.95rem;
     margin-bottom: 24px;
   }
 
-  /* Portrait Stage on Mobile */
+  /* Portrait Stage on Mobile: clean, centered, no clutter */
   .portrait-stage {
-    width: 290px;
-    height: 290px;
-    margin: 10px auto;
+    width: 270px;
+    height: 270px;
+    margin: 15px auto;
   }
 
-  .ring-outer { width: 290px; height: 290px; }
-  .ring-mid { width: 260px; height: 260px; }
-  .ring-inner { width: 230px; height: 230px; }
-  .radar-sweep { width: 215px; height: 215px; }
-  .portrait-frame { width: 195px; height: 195px; }
+  .ring-outer { width: 270px; height: 270px; }
+  .ring-mid { width: 245px; height: 245px; }
+  .ring-inner { width: 220px; height: 220px; }
+  .radar-sweep { width: 210px; height: 210px; }
+  .portrait-frame { width: 190px; height: 190px; }
 
-  /* Floating Chips on Mobile: keep inside bounds */
+  /* Hide floating chips on small mobile to avoid chaos/overlap */
   .floating-chip {
-    padding: 6px 11px;
+    display: none;
   }
-
-  .chip-icon {
-    width: 22px;
-    height: 22px;
-  }
-
-  .chip-icon svg {
-    width: 12px;
-    height: 12px;
-  }
-
-  .chip-label {
-    font-size: 0.74rem;
-  }
-
-  .chip-1 { top: -6px; right: -5px; }
-  .chip-2 { bottom: -6px; right: -5px; }
-  .chip-3 { bottom: -6px; left: -5px; }
-  .chip-4 { top: -6px; left: -5px; }
 
   .tech-coordinate-badge {
-    bottom: -25px;
+    bottom: -20px;
     font-size: 0.68rem;
     padding: 3px 10px;
   }
@@ -2219,7 +2111,7 @@ button, input, textarea {
   /* Process Timeline on Mobile (Vertical Line) */
   .process-timeline {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 18px;
   }
 
   .process-step {
@@ -2230,14 +2122,14 @@ button, input, textarea {
   }
 
   .step-indicator {
-    width: 52px;
-    height: 52px;
-    min-width: 52px;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
     margin-bottom: 0;
   }
 
   .step-number {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
   .step-content {
@@ -2297,25 +2189,18 @@ button, input, textarea {
 /* Very Small Screens (< 380px) */
 @media (max-width: 380px) {
   .portrait-stage {
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
   }
 
-  .ring-outer { width: 260px; height: 260px; }
-  .ring-mid { width: 235px; height: 235px; }
-  .ring-inner { width: 210px; height: 210px; }
-  .radar-sweep { width: 195px; height: 195px; }
-  .portrait-frame { width: 175px; height: 175px; }
-
-  .floating-chip {
-    padding: 4px 8px;
-  }
-  .chip-label {
-    font-size: 0.68rem;
-  }
+  .ring-outer { width: 240px; height: 240px; }
+  .ring-mid { width: 220px; height: 220px; }
+  .ring-inner { width: 195px; height: 195px; }
+  .radar-sweep { width: 185px; height: 185px; }
+  .portrait-frame { width: 165px; height: 165px; }
 
   .brand-name {
-    font-size: 0.98rem;
+    font-size: 0.96rem;
   }
 }
 
@@ -2332,8 +2217,7 @@ button, input, textarea {
 
   .cyber-ring,
   .radar-sweep,
-  .floating-chip,
-  .float-icon-pulse {
+  .floating-chip {
     animation: none !important;
   }
 
