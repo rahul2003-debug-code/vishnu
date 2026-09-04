@@ -142,8 +142,8 @@ function initCyberCanvas() {
       this.vy = (Math.random() - 0.5) * 0.45;
       this.size = Math.random() * 2 + 1;
       this.isGold = Math.random() > 0.4;
-      this.color = this.isGold ? 'rgba(212, 175, 55, ' : 'rgba(45, 212, 191, ';
-      this.baseAlpha = Math.random() * 0.4 + 0.2;
+      this.color = this.isGold ? 'rgba(184, 134, 11, ' : 'rgba(2, 132, 199, ';
+      this.baseAlpha = Math.random() * 0.35 + 0.2;
     }
 
     update() {
@@ -195,7 +195,7 @@ function initCyberCanvas() {
 
         if (dist < maxDist) {
           const alpha = (1 - dist / maxDist) * 0.16;
-          ctx.strokeStyle = `rgba(212, 175, 55, ${alpha})`;
+          ctx.strokeStyle = `rgba(184, 134, 11, ${alpha})`;
           ctx.lineWidth = 0.7;
           ctx.beginPath();
           ctx.moveTo(particles[a].x, particles[a].y);
